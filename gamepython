@@ -1,0 +1,23 @@
+answer = input("Would you like to play ?(yes/no)")
+if answer.lower().strip() == "yes":
+  answer = input(
+      "You reached a crossroad, would you like to go left or right?(left,right)"
+  )
+  if answer == "left":
+    answer = input(
+        "You encounter a monster, would you like to run or attack?(attack,run)"
+    )
+    if answer == "attack":
+      print("That was not the greatest idea, you lost!")
+    else:
+      print("Good choice, you made it away safely.")
+
+  elif answer=="right":
+     answer=input("You can jump over the bridge or go around it. ")
+     if answer=="jump":
+             print("Bad choice, you lost")                           
+     elif answer=="around":
+               print("Good choice, you made it away safely.")
+
+else:
+  print("Too bad!")
